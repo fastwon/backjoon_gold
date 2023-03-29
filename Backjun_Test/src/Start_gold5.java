@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Test2 {
+public class Start_gold5 {
     static String[] makeStar(int N) {
         String s = "";
 
