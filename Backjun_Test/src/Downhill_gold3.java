@@ -14,7 +14,7 @@ public class Downhill_gold3 {
 		} 
 		dp[i][j] = 0;
 		
-		// ¾Æ·¡
+		// ì•„ëž˜
 		if(testMap[i+1][j] != 0 && testMap[i+1][j] > testMap[i][j]) {
 			if(dp[i+1][j] == null) {
 				calMap(i+1, j);
@@ -22,7 +22,7 @@ public class Downhill_gold3 {
 			dp[i][j] += dp[i+1][j];
 		}
 		
-		// À§
+		// ìœ„
 		if(testMap[i-1][j] != 0 && testMap[i-1][j] > testMap[i][j]) {
 			if(dp[i-1][j] == null) {
 				calMap(i-1, j);
@@ -30,7 +30,7 @@ public class Downhill_gold3 {
 			dp[i][j] += dp[i-1][j];
 		}
 		
-		// ¿À¸¥ÂÊ
+		// ì˜¤ë¥¸ìª½
 		if(testMap[i][j+1] != 0 && testMap[i][j+1] > testMap[i][j]) {
 			if(dp[i][j+1] == null) {
 				calMap(i, j+1);
@@ -38,7 +38,7 @@ public class Downhill_gold3 {
 			dp[i][j] += dp[i][j+1];
 		}
 		
-		// ¿ÞÂÊ
+		// ì™¼ìª½
 		if(testMap[i][j-1] != 0 && testMap[i][j-1] > testMap[i][j]) {
 			if(dp[i][j-1] == null) {
 				calMap(i, j-1);
